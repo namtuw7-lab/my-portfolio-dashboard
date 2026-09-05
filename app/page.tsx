@@ -37,7 +37,7 @@ export default async function DashboardPage() {
       <h1>📊 My Portfolio Dashboard</h1>
       <h3 style={{ color: '#555' }}>มูลค่าพอร์ตรวม: ${totalPortfolioValue.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</h3>
       
-      <table border={1} cellPadding={12}" style={{ marginTop: '20px', borderCollapse: 'collapse', width: '100%', maxWidth: '1000px' }}>
+      <table border={1} cellPadding={12} style={{ marginTop: '20px', borderCollapse: 'collapse', width: '100%', maxWidth: '1000px' }}>
         <thead style={{ backgroundColor: '#f0f0f0' }}>
           <tr>
             <th>ชื่อหุ้น</th>
