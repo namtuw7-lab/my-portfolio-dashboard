@@ -1,5 +1,7 @@
 import { supabase } from '../utils/supabase';
 
+export const dynamic = 'force-dynamic';
+
 export default async function DashboardPage() {
   // 1. ดึงข้อมูลจาก Supabase
   const { data: portfolios, error } = await supabase.from('portfolios').select('*');
