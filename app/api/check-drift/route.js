@@ -29,7 +29,7 @@ export async function GET() {
     }));
 
     const totalPortfolioValue = portfoliosWithPrices.reduce((sum, stock) => sum + stock.current_value, 0);
-    const driftLimit = -100.0; // บังคับแจ้งเตือน
+    const driftLimit = 5.0; // บังคับแจ้งเตือน
     let alertMessages = [];
     let debugInfo = []; // 🚨 ตัวแปรสำหรับแอบดูการคำนวณ
 
